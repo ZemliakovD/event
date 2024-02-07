@@ -14,6 +14,11 @@
 </head>
 <body>
   <div class="inner">
+    <video width="100%" height="auto" preload="auto" autoplay="autoplay"
+    loop="loop" poster="bg/daisy-stock-poster.jpg">
+        <source src="bg/daisy-stock-h264-video.mp4" type="video/mp4"></source>
+        <source src="bg/daisy-stock-webm-video.webm" type="video/webm"></source>
+    </video>
     <section class="header">
       <div class="container">
         <div class="row">
@@ -24,23 +29,48 @@
               </div>
               <div class="header-menu">
                 <div class="menu">
-                  <ul>
-                    <li>
-                      <a href="#">Галерея</a>
-                    </li>
-                    <li>
-                      <a href="#">Оборудование</a>
-                    </li>
-                    <li>
-                      <a href="#">Услуги</a>
-                    </li>
-                    <li>
-                      <a href="#">Обо мне</a>
-                    </li>
-                    <li>
-                      <a href="#">Контакты</a>
-                    </li>
-                  </ul>
+                  <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
                 </div>
               </div>
               <div class="header-contacts">
@@ -588,6 +618,56 @@
       </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-content">
+            <div class="footer-top">
+              <img src="img/f_logo.png" alt="">
+              <p>Ведущий в Минске</p>
+            </div>
+            <div class="footer-bottom">
+              <div class="footer-bottom-left">
+                <span>Ведущий Влад Рынкевич</span>
+                <p>Нижний Новгород, улица Нестерова, 22</p>
+                <p><a href="tel:+375291249830">+375 (29) 124-98-30</a></p>
+                <span>Как добраться</span>
+                <p>В навигаторе набирайте Тейя, приведет с нужной стороны, с Большой Печерской. Ориентир ресторан АМО, мы их соседи.</p>
+                <p>Если забьете ул. Нестерова, д.22, то приведет с другой стороны. Придется обходить дом.</p>
+              </div>
+              <div class="footer-bottom-center">
+                <div class="bottom-center-left">
+                  <p>Навигация</p>
+                  <ul>
+                    <li><a href="#">фото</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Оборудование</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                  </ul>
+                  <p>Политика конфиденциальности</p>
+                  <p>Все права защищены</p>
+                </div>
+                <div class="bottom-center-right">
+                  <p>Социальные сети</p>
+                  <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Telegram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-bottom-right">
+                <p><a href="#">Смотреть на Яндекс картах</a></p>
+                <div class="map">
+                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1751ac8a1faaf9500a40c81ba4a093c303e54882139c903e54c5fa46ad3e2980&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
